@@ -1,0 +1,244 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <style>
+     .bd-placeholder-img {
+       font-size: 1.125rem;
+       text-anchor: middle;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       user-select: none;
+     }
+
+     @media (min-width: 768px) {
+       .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+       }
+     }
+   </style>
+   <link rel="stylesheet" href="{% static 'css/info.css'%}">
+  </head>
+  <body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+     <img src="{% static 'images/RIT_Logo.png'%}" alt="" width="auto" height="45" class="d-inline-block align-text-top">
+
+   </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Oxygen Cylinders</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vac">Vaccines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Remdesivir</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Helpline</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit">Login As Admin</button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/x7Lyx8Yyvug/1500x600');box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))">
+
+
+          <div class="container ">
+            <div class="carousel-caption text-start">
+              <h1>Get Information</h1>
+              <p>Availability of Oxygen cylinders, Covid Vaccines and Remdesivir</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/KDd7jJ3TeiA/1500x600'); box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))">
+
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Covid-19 Oxygen Cylinders</h1>
+              <p>Available</p>
+              <p><a class="btn btn-lg" href="#">Get Location</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/niBllet7sTw/1500x600'); box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))">
+
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Covid-19 Vaccines</h1>
+              <p>Available</p>
+              <p><a class="btn btn-lg" href="#">Get Location</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item" style="background-image: url('https://source.unsplash.com/ZOVj4QkmMBc/1500x600'); box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8))">
+
+
+          <div class="container Remdesivir">
+            <div class="carousel-caption text-end">
+              <h1>Remdesivir</h1>
+              <p>Available</p>
+              <p><a class="btn btn-lg" href="#">Get Location</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing" style="margin-bottom: 2%">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <img class="rounded-circle"src="{% static 'images/oxygen.jpg' %}" alt="oxygen cylinder" width="140" height="140">
+
+        <h2>Oxygen Cylinders</h2>
+        <p>Some representative placeholder content for the three columns of text below the carousel.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle"src="{% static 'images/covid.jpeg' %}" alt="covid vaccine" width="140" height="140">
+
+        <h2>Vaccine</h2>
+        <p>Another exciting bit of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="vac">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="rounded-circle" src="{% static 'images/reme.jpg' %}" alt="Remdesivir" width="140" height="140">
+
+        <h2>Remdesivir</h2>
+        <p>And lastly this, the third column of representative placeholder content.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Follow Social Distancing. <span class="text-muted">Stay 6 feet apart</span></h2>
+        <p class="lead">Avoid crowds and poorly ventilated indoor spaces.</p>
+      </div>
+      <div class="col-md-5">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/ar-4huI42jI/400x500" alt="covid">
+
+      </div>
+    </div>
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Always use Mask in public places. <span class="text-muted">Everyone 2 years and older should wear masks in public.</span></h2>
+        <p class="lead">Wear a mask that covers your nose and mouth to help protect yourself and others..</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/z9FST1uGqlc/400x500" alt="covid">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+
+      </div>
+    </div>
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Sanitize.<span class="text-muted">Avoid touching your eyes, nose, and mouth with unwashed hands.</span></h2>
+        <p class="lead">Wash your hands often with soap and water,hand wash, sanitizer for at least 20 seconds especially after you have been in a public place, or after blowing your nose, coughing, or sneezing.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://source.unsplash.com/tDtwC11XjuU/400x500" alt="covid">
+        <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg> -->
+
+
+      </div>
+    </div>
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <section id="footer">
+    <div class="container">
+      <div class="row footer-row">
+        <div class="col-md-4 footer-col">
+          <h3>Address</h3>
+          <p>No.123B, ABC Nagar,<br />DEF road, ABC Colony, <br />XYZ,Chennai - 600000</p>
+
+        </div>
+        <div class="col-md-4 footer-col">
+          <h3>Contact</h3>
+          <p>1234567890</p>
+          <p>0987654321</p>
+
+        </div>
+        <div class="col-md-4 footer-col">
+          <h3>Follow us</h3>
+          <p>facebook</p>
+          <p>instragram</p>
+          <p>youtube</p>
+          <p>twitter</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  </body>
+</html>

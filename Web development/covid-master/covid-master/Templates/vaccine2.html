@@ -1,0 +1,52 @@
+{% extends "vaccine.html" %}
+{% block content %}
+<div class="grid">
+    <form >
+        {% for i in send%}
+    <div class="container">
+      <div class="row ">
+        <div class="col">
+          {{i.date}}
+        </div>
+        <div class="col">
+            {{i.hos}}
+            <p>{{i.add}}</p>
+          </div>
+        <div class="col-md-auto ">
+          {{i.aval}}
+        </div>
+        <div class="col col-lg-2">
+            <a href="https://www.cowin.gov.in/home" class="btn btn-info" role="button">BOOK</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+    {% endfor %}
+    <div class="px-4 py-5 my-5 text-center">
+      <img class="d-block mx-auto mb-4" src="https://img.icons8.com/color/144/000000/telegram-app--v5.png"  width="72" height="72"/>
+
+       <h1 class="display-5 fw-bold">Telegram Group</h1>
+       <div class="col-lg-6 mx-auto">
+         <p class="lead mb-4">To get notifications about slots availability <a href="https://t.me/ritchennai_info">Click here!</a></p>
+
+       </div>
+</form>
+    <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+    </div>
+
+
+{% endblock %}
