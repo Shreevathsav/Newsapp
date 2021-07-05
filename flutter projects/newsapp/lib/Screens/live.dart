@@ -8,7 +8,6 @@ import 'package:newsapp/Screens/TV9Kanada.dart';
 import 'package:newsapp/Utilities/LiveNews.dart';
 import 'package:newsapp/DataModels/LiveData.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:newsapp/Screens/youtubePlayer.dart';
 
 class LiveNews extends StatefulWidget {
   // const LiveNdews({ Key? key }) : super(key: key);
